@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulaire</title>
+</head>
+<body>
+	<form method="post" action="#">
+ 
+   <fieldset>
+       <legend>Vos coordonnées</legend> <!-- Titre du fieldset --> 
+
+       <table>
+       		<tr>
+       			<td>Nom</td>
+       			<td><input type="text" name="nom" /></td>
+       		</tr>
+       		<tr>
+       			<td>Preom</td>
+       			<td><input type="text" name="¨Prenom" /></td>
+       		</tr>
+       		<tr>
+       			<td>Date de naissance</td>
+       			<td><input type="date" name="datedeN" /><br></td>
+       		</tr>
+       		<tr>
+       			<td>E-mail</td>
+       			<td><input type="email" name="email" /></td>
+       		</tr>
+       		<tr>
+       			<td>Votre Site</td>
+       			<td><input type="url" name="site" /></td>
+       		</tr>
+       		<tr>
+       			<td>Code</td>
+       			<td><input type="number" name="code" /></td>
+       		</tr>
+       	</table>
+
+       <p>
+           Genre :
+
+           <input type="radio" name="homme"  /> <label for="Homme">Homme</label>
+           <input type="radio" name="Femme" /> <label for="Femme">Femme</label>
+       </p>
+
+       <p>
+       <label for="pays">Pays</label><br />
+       <select name="pays" id="pays">
+       	   <option value="country">Votre pays</option>
+           <option value="france">France</option>
+           <option value="espagne">Espagne</option>
+           <option value="italie">Italie</option>
+           <option value="royaume-uni">Royaume-Uni</option>
+           <option value="canada">Canada</option>
+           <option value="etats-unis">États-Unis</option>
+           <option value="chine">Chine</option>
+           <option value="japon">Japon</option>
+       </select>
+   </p>
+
+   </fieldset>
+ 
+   <fieldset>
+       <legend>Vos goûts</legend> <!-- Titre du fieldset -->
+ 
+       <input type="checkbox" name="frites" id="frites" /> <label for="frites">Tarte aux fraises à la crème d'amande</label><br />
+       <input type="checkbox" name="steak" id="steak" /> <label for="steak">Tarte aux prunes</label><br />
+       <input type="checkbox" name="epinards" id="epinards" /> <label for="epinards">Tarte rustique aux mirabelles de Loraine, noisette et miel</label><br />
+ 		
+ 		<p>
+       <textarea name="vos gouts" id="ameliorer" rows="10" cols="50">
+       Decrivez vos goûts en détail
+       </textarea>
+       </p>       
+ 
+   </fieldset>
+
+   <fieldset>
+   		<legend>Envoyez nous votre photo</legend>
+
+	   <input type="file"
+       id="avatar" name="avatar"
+       accept="image/png, image/jpeg"><br><br>
+
+       <input type="submit" value="Envoyer">
+       <input type="reset" value="Effacer">
+   	
+   </fieldset>
+</form>
+
+</body>
+</html>
